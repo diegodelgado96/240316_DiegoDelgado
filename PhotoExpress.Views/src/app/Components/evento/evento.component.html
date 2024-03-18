@@ -1,0 +1,91 @@
+<h2 class="tittleEvento">Eventos!</h2>
+
+<mat-card class="cardEvento">
+    <mat-card-title>
+        <button mat-raised-button color="primary" (click)="newEvent()">
+            <mat-icon mat-list-icon>add</mat-icon>Nuevo Evento
+        </button>
+    </mat-card-title>
+
+    <mat-divider></mat-divider>
+
+    <mat-card-content class="dashboard-card-content">
+        <mat-form-field appearence="standard">
+            <mat-label>Buscar</mat-label>
+            <input matInput (keyup)="filterFunc($event)" type="text" name="" id="">
+        </mat-form-field>
+
+        <mat-form-field appearence="standard">
+            <mat-label>Desde</mat-label>
+            <input matInput type="date" (change)="filterFunc($event)">
+        </mat-form-field>
+        
+        <mat-form-field appearence="standard">
+            <mat-label>Hasta</mat-label>
+            <input matInput type="date" (change)="filterFunc($event)">
+        </mat-form-field>
+
+        <div class="mat-elevation-x2">
+            <table mat-table [dataSource]="dataListEventos">
+
+                <ng-container matColumnDef="NumeroReferencia">
+                    <th mat-header-cell *matHeaderCellDef>Referencia</th>
+                    <td mat-cell *matCellDef="let element">{{element.numeroReferencia}}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="NombreInstitucion">
+                    <th mat-header-cell *matHeaderCellDef>Institución</th>
+                    <td mat-cell *matCellDef="let element">{{element.nombreInstitucion}}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="DireccionInstitucion">
+                    <th mat-header-cell *matHeaderCellDef>Dirección</th>
+                    <td mat-cell *matCellDef="let element">{{element.direccionInstitucion}}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="NumeroAlumnos">
+                    <th mat-header-cell *matHeaderCellDef>Alumnos</th>
+                    <td mat-cell *matCellDef="let element">{{element.numeroAlumnos}}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="FechaInicio">
+                    <th mat-header-cell *matHeaderCellDef>Fecha y Hora</th>
+                    <td mat-cell *matCellDef="let element">{{formatFecha(element.fechaInicio)}}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="CostoServicio">
+                    <th mat-header-cell *matHeaderCellDef>Valor</th>
+                    <td mat-cell *matCellDef="let element">{{element.costoServicio}}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="TogaBirrete">
+                    <th mat-header-cell *matHeaderCellDef>Toga y Birrete</th>
+                    <td mat-cell *matCellDef="let element">{{element.togaBirrete? 'Si': 'No'}}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="Acciones">
+                    <th mat-header-cell *matHeaderCellDef style="width: 80px;">Acciones</th>
+                    <td mat-cell *matCellDef="let element">
+                        <button mat-icon-button color="primary" (click)="updateEvent(element)">
+                            <mat-icon>edit</mat-icon>
+                        </button>
+                        <button mat-icon-button color="primary" (click)="deleteEvent(element)">
+                            <mat-icon>delete</mat-icon>
+                        </button>
+                    </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="columnsTable"></tr>
+                <tr mat-row *matRowDef="let row; columns: columnsTable"></tr>
+
+                <tr class="mat-row" *matNoDataRow>
+                    <td class="mat-cell" colspan="4">No Hay valores para mostrar.</td>
+                </tr>
+
+            </table>
+            <mat-paginator [pageSizeOptions]="[5,10,20]" showFirstLastButtons>
+
+            </mat-paginator>
+        </div>
+    </mat-card-content>
+</mat-card>

@@ -1,0 +1,6 @@
+@PhotoExpress.API_HostAddress = http://localhost:5254
+
+GET {{PhotoExpress.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PhotoExpress.BLL\PhotoExpress.BLL.csproj" />
+    <ProjectReference Include="..\PhotoExpress.DAL\PhotoExpress.DAL.csproj" />
+    <ProjectReference Include="..\PhotoExpress.Utility\PhotoExpress.Utility.csproj" />
+  </ItemGroup>
+
+</Project>

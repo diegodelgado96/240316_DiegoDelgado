@@ -1,0 +1,12 @@
+C:\Users\Asus\Desktop\Prueba CTRL\Code\240316_DiegoDelgado\PhotoExpress.DTO\bin\Debug\net8.0\PhotoExpress.DTO.deps.json
+C:\Users\Asus\Desktop\Prueba CTRL\Code\240316_DiegoDelgado\PhotoExpress.DTO\bin\Debug\net8.0\PhotoExpress.DTO.dll
+C:\Users\Asus\Desktop\Prueba CTRL\Code\240316_DiegoDelgado\PhotoExpress.DTO\bin\Debug\net8.0\PhotoExpress.DTO.pdb
+C:\Users\Asus\Desktop\Prueba CTRL\Code\240316_DiegoDelgado\PhotoExpress.DTO\obj\Debug\net8.0\PhotoExpress.DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\Prueba CTRL\Code\240316_DiegoDelgado\PhotoExpress.DTO\obj\Debug\net8.0\PhotoExpress.DTO.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\Prueba CTRL\Code\240316_DiegoDelgado\PhotoExpress.DTO\obj\Debug\net8.0\PhotoExpress.DTO.AssemblyInfo.cs
+C:\Users\Asus\Desktop\Prueba CTRL\Code\240316_DiegoDelgado\PhotoExpress.DTO\obj\Debug\net8.0\PhotoExpress.DTO.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Prueba CTRL\Code\240316_DiegoDelgado\PhotoExpress.DTO\obj\Debug\net8.0\PhotoExpress.DTO.sourcelink.json
+C:\Users\Asus\Desktop\Prueba CTRL\Code\240316_DiegoDelgado\PhotoExpress.DTO\obj\Debug\net8.0\PhotoExpress.DTO.dll
+C:\Users\Asus\Desktop\Prueba CTRL\Code\240316_DiegoDelgado\PhotoExpress.DTO\obj\Debug\net8.0\refint\PhotoExpress.DTO.dll
+C:\Users\Asus\Desktop\Prueba CTRL\Code\240316_DiegoDelgado\PhotoExpress.DTO\obj\Debug\net8.0\PhotoExpress.DTO.pdb
+C:\Users\Asus\Desktop\Prueba CTRL\Code\240316_DiegoDelgado\PhotoExpress.DTO\obj\Debug\net8.0\ref\PhotoExpress.DTO.dll
