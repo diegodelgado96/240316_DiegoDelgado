@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "BiOuHh6oq/ZEALAbm2u2MnxkoVnibKttOBDwGXtsRTZon/JGf9jELxMywGsIG4CRVc96H/74wdeUtJD++4obkw==",
+  "dgSpecHash": "gAvbDB4R4ihOsL6PMWlMEmyO5CXxu3kSkAOHJtnV7B7EKNHA4HjFvuCyvmQRvy1KSKOkB5r8Y9cpIILoV9uRQg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Asus\\Desktop\\Prueba CTRL\\Code\\240316_DiegoDelgado\\PhotoExpress.IOC\\PhotoExpress.IOC.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Asus\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

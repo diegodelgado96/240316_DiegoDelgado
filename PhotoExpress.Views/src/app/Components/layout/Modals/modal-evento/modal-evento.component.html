@@ -1,0 +1,56 @@
+<h2 mat-dialog-title> {{tittle}} </h2>
+
+<mat-dialog-content>
+    <form [formGroup]="formularioEvento">
+        <mat-grid-list cols="1" rowHeight="150px">
+            <mat-grid-tile>
+                <mat-form-field >
+                    <mat-label>Nombre de la Institución</mat-label>
+                    <input matInput autocomplete="off" formControlName="nombreInstitucion" type="text">
+                </mat-form-field>
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+                <mat-form-field apperance="outline">
+                    <mat-label>Dirección de la Institución</mat-label>
+                    <input matInput autocomplete="off" formControlName="direccionInstitucion" type="text">
+                </mat-form-field>
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+                <mat-form-field apperance="outline">
+                    <mat-label>Número de alumnos</mat-label>
+                    <input matInput autocomplete="off" formControlName="numeroAlumnos" type="number">
+                </mat-form-field>
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+                <mat-label>Fecha y Hora de Inicio</mat-label>
+                <mat-form-field apperance="outline">
+                    <mat-label>Fecha</mat-label>
+                    <input matInput autocomplete="off" formControlName="fechaInicio" type="date">
+                </mat-form-field>
+                <mat-form-field apperance="outline">
+                    <mat-label>Hora de Inicio</mat-label>
+                    <input matInput autocomplete="off" formControlName="horaInicio" type="time">
+                </mat-form-field>
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+                <mat-checkbox formControlName="togaBirrete" color="primary">Toga y birrete incluidos?</mat-checkbox>
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+                <mat-form-field apperance="outline">
+                    <mat-label>Costo total</mat-label>
+                    <input matInput autocomplete="off" [value]="calcularCostoTotal()" disabled>
+                </mat-form-field>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button mat-raised-button mat-dialog-close color="warn">Cancelar</button>
+    <button mat-raised-button mat-dialog-close color="primary" [disabled]="formularioEvento.invalid" (click)="saveEditEvento()">{{buttonAccion}}</button>
+</mat-dialog-actions>

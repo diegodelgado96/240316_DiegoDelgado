@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PhotoExpress.DTO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f0d9d0b441be3fd5cc4d25571de5bfab9c63fb5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e4445b57089d5996ae545a7b5c6ed387b4e1c0c")]
 [assembly: System.Reflection.AssemblyProductAttribute("PhotoExpress.DTO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PhotoExpress.DTO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

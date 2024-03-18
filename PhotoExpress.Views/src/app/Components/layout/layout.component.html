@@ -1,0 +1,38 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-icon-button (click)="sidenav.toggle();">
+            <mat-icon>menu</mat-icon>
+        </button>
+
+        <h1>Photo Express</h1>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav opened="true" mode="side" id="sidenav">
+        <mat-nav-list>
+            <mat-list-item routerLink="/pages/Evento">
+                <div  class="item">
+                    <mat-icon mat-list-icon class="icon">dashboard</mat-icon>
+                    <div mat-line>
+                        Dashboard
+                    </div>
+                </div>
+            </mat-list-item>
+            <mat-list-item routerLink="/pages/ModificacionesEvento">
+                <div  class="item">
+                    <mat-icon mat-list-icon class="icon">collections_bookmark</mat-icon>
+                    <div mat-line>
+                        Modificaciones
+                    </div>
+                </div>
+            </mat-list-item>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <div id="content">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

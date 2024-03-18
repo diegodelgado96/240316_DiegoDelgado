@@ -1,0 +1,36 @@
+<h2 class="tittleEvento">Modificaciones!</h2>
+
+<mat-card class="cardEvento">
+    <mat-card-content class="dashboard-card-content">
+        <div class="mat-elevation-x2">
+            <table mat-table [dataSource]="dataListEventos">
+
+                <ng-container matColumnDef="FechaModificacion">
+                    <th mat-header-cell *matHeaderCellDef>Fecha</th>
+                    <td mat-cell *matCellDef="let element">{{formatFecha(element.fechaModificacion)}}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="DetalleAnterior">
+                    <th mat-header-cell *matHeaderCellDef>Anterior</th>
+                    <td mat-cell *matCellDef="let element">{{element.detalleAnterior}}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="DetalleActual">
+                    <th mat-header-cell *matHeaderCellDef>Actual</th>
+                    <td mat-cell *matCellDef="let element">{{element.detalleActual}}</td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="columnsTable"></tr>
+                <tr mat-row *matRowDef="let row; columns: columnsTable"></tr>
+
+                <tr class="mat-row" *matNoDataRow>
+                    <td class="mat-cell" colspan="4">No Hay valores para mostrar.</td>
+                </tr>
+
+            </table>
+            <mat-paginator [pageSizeOptions]="[5,10,20]" showFirstLastButtons>
+
+            </mat-paginator>
+        </div>
+    </mat-card-content>
+</mat-card>

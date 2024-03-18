@@ -1,0 +1,15 @@
+#sidenav {
+    width: 200px;
+}
+
+#content {
+    height: 90vh !important;
+}
+
+.item{
+    display: flex !important;
+}
+
+.icon {
+    padding-right: 10px;
+}
